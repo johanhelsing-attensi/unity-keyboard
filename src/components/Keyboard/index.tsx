@@ -5,7 +5,6 @@ import backspaceIcon from './assets/backspace-icon.svg';
 import returnIcon from './assets/return-icon.svg';
 import Key from './Key';
 import NumPad from './NumPad';
-import RightPad from './RightPad';
 import MessageType from '../../models/MessageType';
 import SimpleKeyDefinition from '../../models/SimpleKeyDefinition';
 import sendKeyboardInput from '../../utils/sendKeyboardInput';
@@ -62,9 +61,6 @@ export default class Keyboard extends Component {
             </Key>
           </div>
           {this._renderVoiceButton()}
-        </div>
-        <div className="right-pad-container">
-          <RightPad/>
         </div>
       </div>
     );
